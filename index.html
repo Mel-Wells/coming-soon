@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coming Soon!</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- This is the first section of the page user will see -->
+    <section>
+        <div class="container">
+            <h1>COMING SOON</h1>
+            <img src="images/pexels-photo-9951077.jpeg" alt="random green numbers" id="binary-image">
+            <p>To a cyberspace near you...</p>
+        </div>
+    </section>
+    <!-- Cube section of the page -->
+    <section>
+        <div class="fly-container">
+            <div class="cube"> 
+  
+                <!-- Creating 6 divs for each face of the cube -->
+          
+                <div class="box box1"> 
+                </div> 
+          
+                <div class="box box2"> 
+                </div> 
+    
+                <div class="box box3"> 
+                </div> 
+          
+                <div class="box box4"> 
+                </div> 
+          
+                <div class="box box5"> 
+                </div> 
+    
+                <div class="box box6"> 
+                </div> 
+            </div> 
+        </div>
+    </section>
+    <section>
+        <!-- Final section of the page with a nice surprise-->
+        <div class="last-container">
+            <div class="inner">
+                <h2>A New Gen Of Technology Awaits</h2>
+                <img src="images/robotic-hand.png" alt="robotic hand" id="robotic-hand">
+                <p>Stay in the loop to see what the future holds:</p>
+                <button id="subscribe-button">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- JavaScript only past this point-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const image = document.getElementById('robotic-hand');
+            const subscribeButton = document.getElementById('subscribe-button');
+        
+            function checkScroll() {
+                const rect = image.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    image.classList.add('clear');
+                } else {
+                    image.classList.remove('clear');
+                }
+            }
+
+            function handleSubscribeClick() {
+                alert('Thanks, our AI overlords will reach out soon!');
+            }
+        
+            window.addEventListener('scroll', checkScroll);
+            subscribeButton.addEventListener('click', handleSubscribeClick);
+            checkScroll(); // Initial check in case the image is already in view
+        });
+        </script>
+</body>
+</html>
