@@ -1,18 +1,3 @@
-/* Font Import Section*/
-@font-face {
-    font-family: 'Exo2-thin';
-    src: url('fonts/Exo2-Thin.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Exo2-italic';
-    src: url('fonts/Exo2-Italic-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Orbitron'; 
-    src: url('/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
-}
 
 /* Remove margin and padding from body and html */
 html, body {
@@ -176,7 +161,7 @@ h2 {
 
 p {
     font-size: 1.2em;
-    font-family: 'Exo2-thin';
+    font-family: 'Exo 2';
     text-align: center;
 }
 
