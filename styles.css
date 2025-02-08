@@ -4,13 +4,14 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto; 
+    
     font-size: 16px; /* Base font size */
 }
 
 /* Body will be styled here */
 body {
+    overflow-x: hidden;
+    overflow-y: auto; 
     background-color: #000000;
     color: #FFFFFF;
 }
